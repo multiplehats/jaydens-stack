@@ -1,5 +1,5 @@
 <p align="center">
- <img align="center" src="https://github.com/multiplehats/jaydens-stack/blob/main/apps/web/static/opengraph.png" height="96" />
+ <img align="center" src="https://github.com/multiplehats/jaydens-stack/blob/main/apps/web/static/opengraph.png" />
  <h1 align="center">
   Jayden's Stack ✨
  </h1>
