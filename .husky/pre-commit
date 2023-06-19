@@ -2,5 +2,5 @@
 . "$(dirname "$0")/_/husky.sh"
 
 # pnpm
-pnpm exec lint-staged
+pnpm run lint-staged
 # pnpx lint-staged

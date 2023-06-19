@@ -1,8 +1,8 @@
-import type { RequestEvent } from '@sveltejs/kit';
+import type { RequestEvent } from "@sveltejs/kit";
 
 export type CreateInnerContextOptions = {
-	request: RequestEvent['request'];
-	isDataRequest: boolean;
+  request: RequestEvent["request"];
+  isDataRequest: boolean;
 };
 
 /**
@@ -15,9 +15,9 @@ export type CreateInnerContextOptions = {
  * @see https://trpc.io/docs/context#inner-and-outer-context
  */
 export async function createContextInner(opts: CreateInnerContextOptions) {
-	return {
-		...opts
-	};
+  return {
+    ...opts,
+  };
 }
 
 /**
@@ -25,11 +25,11 @@ export async function createContextInner(opts: CreateInnerContextOptions) {
  * @link https://trpc.io/docs/context
  */
 export async function createContext({ request, isDataRequest }: RequestEvent) {
-	const contextInner = await createContextInner({ request, isDataRequest });
+  const contextInner = await createContextInner({ request, isDataRequest });
 
-	return {
-		...contextInner
-	};
+  return {
+    ...contextInner,
+  };
 }
 
 export type TRPCContext = Awaited<ReturnType<typeof createContext>>;

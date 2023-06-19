@@ -1,5 +1,5 @@
-import vercel from '@sveltejs/adapter-vercel';
-import { vitePreprocess } from '@sveltejs/kit/vite';
+import vercel from "@sveltejs/adapter-vercel";
+import { vitePreprocess } from "@sveltejs/kit/vite";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -10,9 +10,9 @@ const config = {
    */
   preprocess: vitePreprocess(),
 
-	kit: {
-		adapter: vercel(),
-	},
+  kit: {
+    adapter: vercel(),
+  },
 
   vitePlugin: {
     /**
@@ -22,11 +22,11 @@ const config = {
      * @see https://github.com/sveltejs/vite-plugin-svelte/blob/main/docs/config.md#inspector
      */
     inspector: {
-      toggleKeyCombo: 'control-shift',
+      toggleKeyCombo: "control-shift",
       holdMode: true,
-      showToggleButton: 'never'
-    }
-	},
+      showToggleButton: "never",
+    },
+  },
 
   /**
    * Shadcn Svelte CLI
@@ -34,8 +34,8 @@ const config = {
    * @see https://www.shadcn-svelte.com/docs/cli
    */
   shadcn: {
-    componentPath: "../../packages/ui/components"
-  }
+    componentPath: "../../packages/ui/components",
+  },
 };
 
 export default config;
