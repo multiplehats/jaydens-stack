@@ -3,7 +3,7 @@
 
   import { cn } from "@acme/core/class-utils";
 
-  import { buttonVariants } from "$components/button";
+  import { buttonVariants } from "../button";
 
   let className: string | undefined | null = undefined;
   export { className as class };

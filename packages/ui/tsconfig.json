@@ -12,6 +12,7 @@
         },
     },
     "include": [
+        "./index.ts",
         "./components/**/*.d.ts",
         "./components/**/*.ts",
         "./components/**/*.js",

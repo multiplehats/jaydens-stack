@@ -5,7 +5,7 @@
 
   import { cn } from "@acme/core/class-utils";
 
-  import Pulse from "$components/pulse/Pulse.svelte";
+  import Pulse from "../pulse/Pulse.svelte";
 
   import { buttonVariants } from ".";
 
@@ -32,23 +32,17 @@
 
   interface AnchorElement extends Props, HTMLAnchorAttributes {
     href?: HTMLAnchorAttributes["href"];
-    type?: "submit" | "reset" | "button"
+    type?: "submit" | "reset" | "button" | null
   }
 
   interface ButtonElement extends Props, HTMLButtonAttributes {
     type?: HTMLButtonAttributes["type"];
-    href?: "submit" | "reset" | "button"
+    href?: "submit" | "reset" | "button" | null
   }
 
   // TODO: Figure out how to make this work
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   type $$Props = AnchorElement | ButtonElement;
-
-  $: dynamicIconClasses = {
-    default: "h-5 w-5",
-    sm: "h-5 w-5",
-    lg: "h-5 w-5",
-  };
 </script>
 
 <svelte:element
@@ -71,7 +65,11 @@
   {#if icon && iconPlacement === "left"}
     <svelte:component
       this={icon}
-      class={cn("h-5 w-5", $$slots.default ? "mr-1" : "", dynamicIconClasses[size], iconClasses)} />
+      class={cn("h-5 w-5", $$slots.default ? "mr-1" : "",
+      size === 'default' && 'h-5 w-5',
+      size === 'sm' && 'h-4 w-4',
+      size === 'lg' && 'h-6 w-6',
+      iconClasses)} />
   {/if}
 
   <slot />

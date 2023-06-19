@@ -5,7 +5,7 @@
          * use ignoreDeprecations because verbatimModuleSyntax not supported upstream by @tsconfig/svelte yet.
          * @see https://github.com/sveltejs/svelte/issues/8424
         */
-        // "ignoreDeprecations": "5.0",
+        "ignoreDeprecations": "5.0",
         "target": "ESNext",
         "useDefineForClassFields": true,
         "module": "ESNext",
