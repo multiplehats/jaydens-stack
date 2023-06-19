@@ -1,4 +1,9 @@
-# Jaydens Stack
+<p align="center">
+ <img align="center" src="https://raw.githubusercontent.com/multiplehats/jaydens-stack/main/apps/web/static/opengraph.png" height="96" />
+ <h1 align="center">
+  Jayden's Stack ✨
+ </h1>
+</p>
 
 Welcome to Jayden's Stack 👋, a modern, efficient, and feature-packed monorepo boilerplate focused on SvelteKit. This project is all about enhanced developer experience, massive scalability, and high performance.
 
