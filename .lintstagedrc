@@ -1,6 +1,8 @@
 {
-	"*.{js,ts,svelte}": [
-		"prettier --write",
+	"apps/**/*.{js,ts,svelte,svx}": [
+		"eslint --fix"
+	],
+	"packages/components/**/*.{js,ts,svelte,svx}": [
 		"eslint --fix"
 	]
 }

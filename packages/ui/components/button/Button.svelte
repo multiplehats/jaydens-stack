@@ -32,12 +32,12 @@
 
   interface AnchorElement extends Props, HTMLAnchorAttributes {
     href?: HTMLAnchorAttributes["href"];
-    type?: never;
+    type?: "submit" | "reset" | "button"
   }
 
   interface ButtonElement extends Props, HTMLButtonAttributes {
     type?: HTMLButtonAttributes["type"];
-    href?: never;
+    href?: "submit" | "reset" | "button"
   }
 
   // TODO: Figure out how to make this work
