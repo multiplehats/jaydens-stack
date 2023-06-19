@@ -7,22 +7,17 @@
 
 Welcome to Jayden's Stack 👋, a modern, efficient, and feature-packed monorepo boilerplate focused on SvelteKit. This project is all about enhanced developer experience, massive scalability, and high performance.
 
-> **Note** <br> **This is quite an opinionated monorepo** <br> But, it's the exact structure I've used to build several production apps. And for me, it totally rocks.
+Give me a [follow on Twitter](https://twitter.com/itschrisjayden) for updates. And if you dig this repo, don't forget to give it a star ⭐️
 
-## I don't need "X"
-When building this monorepo template, I believed that if you don't need something, it should be easy to remove. So yes, there might be some manual work involved, but the main goal here is to save myself time and hopefully yours! 🎉
+> **Note** <br> **This is quite an opinionated monorepo** <br> But, it's the exact structure I've used to build several production apps. And for me (and team members) it totally rocks. Over time, I might add additional utitilies and other libraries, but I'm trying to keep things "simple" (for my own sake).
 
-## Todo's
+## But, I don't need "X"
+When building this monorepo template, I tried to make it so that if you don't need something, it's relatively easy to eject. There might be some manual work involved if you want to get rid of something (sorry, no fancy CLI's yet), but the main goal here is to save myself time and hopefully yours! 🎉
 
-**Important:**
-
-- [x] Setup Husky, commitlint and CLI.
-- [x] Type checking doesn't work. Weird error is thrown.
-
-**Less important:**
+## Todos / Features
 
 - [ ] Spin tRPC off into its own package.
-- [ ] Integrate Prisma.
+- [ ] Integrate Prisma + Planetscale
 - [ ] Incorporate AuthJS.
 
 ## Featured Technologies
