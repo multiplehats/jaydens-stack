@@ -12,7 +12,7 @@ When building this monorepo template, I believed that if you don't need somethin
 **Important:**
 
 - [x] Setup Husky, commitlint and CLI.
-- [ ] Type checking doesn't work. Weird error is thrown.
+- [x] Type checking doesn't work. Weird error is thrown.
 
 **Less important:**
 
