@@ -21,7 +21,7 @@
     "turbo": "latest"
   },
   "lint-staged": {
-    "(apps|packages)/**/*.{js,ts,jsx,tsx,svelte}": [
+    "(apps|packages)/**/*.{js,ts,svelte}": [
       "prettier --write",
       "eslint --fix"
     ]
