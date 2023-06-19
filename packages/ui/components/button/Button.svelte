@@ -40,6 +40,8 @@
     href?: never;
   }
 
+  // TODO: Figure out how to make this work
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   type $$Props = AnchorElement | ButtonElement;
 
   $: dynamicIconClasses = {
