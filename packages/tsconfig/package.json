@@ -1,0 +1,12 @@
+{
+  "name": "@acme/tsconfig",
+  "version": "0.0.0",
+  "license": "MIT",
+  "files": [
+    "tsconfig-base.json",
+    "tsconfig-svelte-library.json"
+  ],
+  "devDependencies": {
+    "@tsconfig/svelte": "3.0.0"
+  }
+}

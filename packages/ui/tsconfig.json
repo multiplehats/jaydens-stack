@@ -1,0 +1,25 @@
+{
+    "extends": "@acme/tsconfig/tsconfig-svelte-library.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "$components": [
+                "./components"
+            ],
+            "$components/*": [
+                "./components/*"
+            ]
+        },
+    },
+    "include": [
+        "./components/**/*.d.ts",
+        "./components/**/*.ts",
+        "./components/**/*.js",
+        "./components/**/*.svelte"
+    ],
+    "exclude": [
+        "dist",
+        "build",
+        "node_modules"
+    ]
+}

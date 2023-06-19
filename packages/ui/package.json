@@ -1,0 +1,27 @@
+{
+  "name": "@acme/ui",
+  "version": "0.0.0",
+  "description": "Svelte component library",
+  "license": "MIT",
+  "type": "module",
+  "main": "index",
+  "module": "index.ts",
+  "svelte": "index.ts",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "type-check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@acme/config": "workspace:^",
+    "@acme/tsconfig": "workspace:^",
+    "class-variance-authority": "^0.6.0",
+    "svelte": "^3.59.1",
+    "svelte-check": "^2.7.1",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@acme/core": "workspace:^",
+    "radix-svelte": "^0.7.1"
+  }
+}

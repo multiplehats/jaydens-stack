@@ -1,0 +1,322 @@
+[
+    {
+        "id": 1,
+        "name": "Coca Cola",
+        "type": "Soft Drink",
+        "origin": "USA",
+        "description": "A popular carbonated cola soft drink.",
+        "alcoholic": false
+    },
+    {
+        "id": 2,
+        "name": "Fanta",
+        "type": "Soft Drink",
+        "origin": "Germany",
+        "description": "A fruit-flavored carbonated soft drink.",
+        "alcoholic": false
+    },
+    {
+        "id": 3,
+        "name": "Sprite",
+        "type": "Soft Drink",
+        "origin": "USA",
+        "description": "A colorless, lemon and lime-flavored soft drink.",
+        "alcoholic": false
+    },
+    {
+        "id": 4,
+        "name": "Pepsi",
+        "type": "Soft Drink",
+        "origin": "USA",
+        "description": "A carbonated soft drink manufactured by PepsiCo.",
+        "alcoholic": false
+    },
+    {
+        "id": 5,
+        "name": "7up",
+        "type": "Soft Drink",
+        "origin": "USA",
+        "description": "A brand of lemon-lime-flavored non-caffeinated soft drink.",
+        "alcoholic": false
+    },
+    {
+        "id": 6,
+        "name": "Mountain Dew",
+        "type": "Soft Drink",
+        "origin": "USA",
+        "description": "A carbonated soft drink brand produced and owned by PepsiCo.",
+        "alcoholic": false
+    },
+    {
+        "id": 7,
+        "name": "Dr Pepper",
+        "type": "Soft Drink",
+        "origin": "USA",
+        "description": "A carbonated soft drink created in the 1880s.",
+        "alcoholic": false
+    },
+    {
+        "id": 8,
+        "name": "Ginger Ale",
+        "type": "Soft Drink",
+        "origin": "Ireland",
+        "description": "A ginger-flavored soft drink.",
+        "alcoholic": false
+    },
+    {
+        "id": 9,
+        "name": "Iced Tea",
+        "type": "Tea",
+        "origin": "USA",
+        "description": "A form of cold tea, usually served in a glass with ice.",
+        "alcoholic": false
+    },
+    {
+        "id": 10,
+        "name": "Red Bull",
+        "type": "Energy Drink",
+        "origin": "Austria",
+        "description": "An energy drink sold by Red Bull GmbH.",
+        "alcoholic": false
+    },
+    {
+        "id": 11,
+        "name": "Gatorade",
+        "type": "Sports Drink",
+        "origin": "USA",
+        "description": "A non-carbonated sports drink manufactured by The Gatorade Company, Inc.",
+        "alcoholic": false
+    },
+    {
+        "id": 12,
+        "name": "Coffee",
+        "type": "Hot Drink",
+        "origin": "Ethiopia",
+        "description": "A brewed drink prepared from roasted coffee beans.",
+        "alcoholic": false
+    },
+    {
+        "id": 13,
+        "name": "Espresso",
+        "type": "Hot Drink",
+        "origin": "Italy",
+        "description": "A full-flavored, concentrated form of coffee.",
+        "alcoholic": false
+    },
+    {
+        "id": 14,
+        "name": "Cappuccino",
+        "type": "Hot Drink",
+        "origin": "Italy",
+        "description": "A coffee drink that today is typically composed of double espresso and hot milk, with the surface topped with foamed milk.",
+        "alcoholic": false
+    },
+    {
+        "id": 15,
+        "name": "Latte",
+        "type": "Hot Drink",
+        "origin": "Italy",
+        "description": "A coffee drink made with espresso and steamed milk.",
+        "alcoholic": false
+    },
+    {
+        "id": 16,
+        "name": "Hot Chocolate",
+        "type": "Hot Drink",
+        "origin": "Mexico",
+        "description": "A heated drink consisting of shaved chocolate, melted chocolate or cocoa powder, heated milk or water, and sugar.",
+        "alcoholic": false
+    },
+    {
+        "id": 17,
+        "name": "Milkshake",
+        "type": "Cold Drink",
+        "origin": "USA",
+        "description": "A cold beverage which is usually made from milk, ice cream, or iced milk, and flavorings or sweeteners such as butterscotch, caramel sauce, chocolate syrup, or fruit syrup.",
+        "alcoholic": false
+    },
+    {
+        "id": 18,
+        "name": "Smoothie",
+        "type": "Cold Drink",
+        "origin": "USA",
+        "description": "A blended and sometimes sweetened beverage made from fresh fruit.",
+        "alcoholic": false
+    },
+    {
+        "id": 19,
+        "name": "Mocha",
+        "type": "Hot Drink",
+        "origin": "Yemen",
+        "description": "Also known as mocaccino, is a chocolate-flavored variant of a caffè latte.",
+        "alcoholic": false
+    },
+    {
+        "id": 20,
+        "name": "Green Tea",
+        "type": "Hot Drink",
+        "origin": "China",
+        "description": "A type of tea that is made from Camellia sinensis leaves and buds that have not undergone the same withering and oxidation process used to make oolong teas and black teas.",
+        "alcoholic": false
+    },
+    {
+        "id": 21,
+        "name": "Chai Latte",
+        "type": "Hot Drink",
+        "origin": "India",
+        "description": "A flavored tea beverage made by brewing black tea with a mixture of aromatic herbs and spices.",
+        "alcoholic": false
+    },
+    {
+        "id": 22,
+        "name": "Lemonade",
+        "type": "Cold Drink",
+        "origin": "Egypt",
+        "description": "A sweetened lemon-flavored beverage.",
+        "alcoholic": false
+    },
+    {
+        "id": 23,
+        "name": "Yerba Mate",
+        "type": "Hot Drink",
+        "origin": "South America",
+        "description": "A traditional South American brew that’s been said to offer the “strength of coffee, the health benefits of tea, and the euphoria of chocolate”.",
+        "alcoholic": false
+    },
+    {
+        "id": 24,
+        "name": "Water",
+        "type": "Cold Drink",
+        "origin": "Nature",
+        "description": "A transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth's hydrosphere and the fluids of all known living organisms.",
+        "alcoholic": false
+    },
+    {
+        "id": 25,
+        "name": "Coconut Water",
+        "type": "Cold Drink",
+        "origin": "Tropical Regions",
+        "description": "The clear liquid inside coconuts (fruits of the coconut palm).",
+        "alcoholic": false
+    },
+    {
+        "id": 26,
+        "name": "Orange Juice",
+        "type": "Cold Drink",
+        "origin": "France",
+        "description": "A liquid extract of the orange tree fruit, produced by squeezing or reaming oranges.",
+        "alcoholic": false
+    },
+    {
+        "id": 27,
+        "name": "Apple Juice",
+        "type": "Cold Drink",
+        "origin": "Asia",
+        "description": "A fruit juice made by the maceration and pressing of an apple.",
+        "alcoholic": false
+    },
+    {
+        "id": 28,
+        "name": "Grape Juice",
+        "type": "Cold Drink",
+        "origin": "Europe",
+        "description": "A juice obtained from crushing and blending grapes into a liquid.",
+        "alcoholic": false
+    },
+    {
+        "id": 29,
+        "name": "Pina Colada",
+        "type": "Cocktail",
+        "origin": "Puerto Rico",
+        "description": "A sweet cocktail made with rum, cream of coconut or coconut milk, and pineapple juice.",
+        "alcoholic": true
+    },
+    {
+        "id": 30,
+        "name": "Mimosa",
+        "type": "Cocktail",
+        "origin": "USA",
+        "description": "A cocktail composed of equal parts champagne (or other sparkling wine) and chilled citrus juice, usually orange juice.",
+        "alcoholic": true
+    },
+    {
+        "id": 31,
+        "name": "Martini",
+        "type": "Cocktail",
+        "origin": "USA",
+        "description": "A cocktail made with gin and vermouth, and garnished with an olive or a lemon twist.",
+        "alcoholic": true
+    },
+    {
+        "id": 32,
+        "name": "Mojito",
+        "type": "Cocktail",
+        "origin": "Cuba",
+        "description": "A traditional Cuban highball consisting of five ingredients: white rum, sugar, lime juice, soda water, and mint.",
+        "alcoholic": true
+    },
+    {
+        "id": 33,
+        "name": "Tequila Sunrise",
+        "type": "Cocktail",
+        "origin": "USA",
+        "description": "A cocktail made of tequila, orange juice, and grenadine syrup and served unmixed in a tall glass.",
+        "alcoholic": true
+    },
+    {
+        "id": 34,
+        "name": "Margarita",
+        "type": "Cocktail",
+        "origin": "Mexico",
+        "description": "A cocktail consisting of tequila, orange liqueur, and lime juice often served with salt on the rim of the glass.",
+        "alcoholic": true
+    },
+    {
+        "id": 35,
+        "name": "Rum and Coke",
+        "type": "Cocktail",
+        "origin": "USA",
+        "description": "A highball cocktail consisting of cola, rum, and often lime juice on ice.",
+        "alcoholic": true
+    },
+    {
+        "id": 36,
+        "name": "White Russian",
+        "type": "Cocktail",
+        "origin": "Belgium",
+        "description": "A cocktail made with vodka, coffee liqueur, and cream served with ice in an Old Fashioned glass.",
+        "alcoholic": true
+    },
+    {
+        "id": 37,
+        "name": "Screwdriver",
+        "type": "Cocktail",
+        "origin": "USA",
+        "description": "A simple but refreshing cocktail made by combining orange juice and vodka over ice.",
+        "alcoholic": true
+    },
+    {
+        "id": 38,
+        "name": "Bloody Mary",
+        "type": "Cocktail",
+        "origin": "USA",
+        "description": "A cocktail containing vodka, tomato juice, and combinations of other spices.",
+        "alcoholic": true
+    },
+    {
+        "id": 39,
+        "name": "Manhattan",
+        "type": "Cocktail",
+        "origin": "USA",
+        "description": "A cocktail made with whiskey, sweet vermouth, and bitters.",
+        "alcoholic": true
+    },
+    {
+        "id": 40,
+        "name": "Tom Collins",
+        "type": "Cocktail",
+        "origin": "England",
+        "description": "A cocktail made from gin, lemon juice, sugar, and carbonated water.",
+        "alcoholic": true
+    }
+]

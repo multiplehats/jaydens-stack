@@ -1,0 +1,43 @@
+{
+  "name": "@acme/web",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite dev --port 3000 --open",
+    "build": "vite build",
+    "package": "vite package",
+    "preview": "vite preview",
+    "type-check": "svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "prettier --check --ignore-path=../../.prettierignore . && eslint \"src\"",
+    "format": "prettier --write --ignore-path=../../.prettierignore ."
+  },
+  "dependencies": {
+    "@acme/core": "workspace:^",
+    "@tanstack/svelte-query": "^4.29.14",
+    "@trpc/client": "^10.30.0",
+    "@trpc/server": "^10.30.0",
+    "radix-svelte": "^0.7.1",
+    "superjson": "^1.12.3",
+    "trpc-svelte-query-adapter": "^2.1.0",
+    "trpc-sveltekit": "^3.5.14",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@acme/config": "workspace:^",
+    "@acme/ui": "workspace:^",
+    "@sveltejs/adapter-vercel": "^3.0.1",
+    "@sveltejs/kit": "^1.20.4",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "svelte": "^3.54.0",
+    "tailwindcss": "^3.3.2",
+    "tslib": "^2.4.1",
+    "typescript": "^5.0.0",
+    "vite": "^4.3.0",
+    "vite-tsconfig-paths": "^4.2.0"
+  },
+  "type": "module"
+}

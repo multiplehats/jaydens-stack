@@ -1,0 +1,14 @@
+{
+  "name": "@acme/core",
+  "version": "1.0.0",
+  "description": "Core functionality and common utilities for Acme",
+  "main": "./index.ts",
+  "dependencies": {
+    "clsx": "^1.2.1",
+    "tailwind-merge": "^1.13.2"
+  },
+  "devDependencies": {
+    "@acme/tsconfig": "workspace:^",
+    "typescript": "^5.0.0"
+  }
+}
