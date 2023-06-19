@@ -203,6 +203,9 @@ importers:
       class-variance-authority:
         specifier: ^0.6.0
         version: 0.6.0(typescript@5.1.3)
+      lucide-svelte:
+        specifier: ^0.246.0
+        version: 0.246.0(svelte@3.59.1)
       svelte:
         specifier: ^3.59.1
         version: 3.59.1
@@ -2761,6 +2764,14 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
+
+  /lucide-svelte@0.246.0(svelte@3.59.1):
+    resolution: {integrity: sha512-wAuFC8WUeRUaVli9xvSkrngD3nHrBI4Z/8Pq+Tu/FS4OqeKOWiUk5kCX35g97vAbbzjrgDGAPgRxImBzB2rLHg==}
+    peerDependencies:
+      svelte: ^3.49.0
+    dependencies:
+      svelte: 3.59.1
+    dev: true
 
   /magic-string@0.25.9:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}
