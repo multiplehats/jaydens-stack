@@ -49,6 +49,12 @@ When building this monorepo template, I tried to make it so that if you don't ne
     ```
 Voila! You now have a local running instance of Jayden's Stack!
 
+## Adding shadcn components
+
+Adding new components is pretty simple, you can either manually over components to the `packages/ui` directory. Or, `cd` into `apps/web` and run the shadcn CLI command, e.g. `npx shadcn-svelte add accordion`. This will put the new component in the `packages/ui` directory.
+
+Don't forget to update imports ✌️
+
 ## Contributing
 Contributions, issues, and feature requests are welcome! See our [Contributing Guide](CONTRIBUTING.md) for more details.
 
