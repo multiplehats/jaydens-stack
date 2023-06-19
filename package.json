@@ -22,10 +22,11 @@
     "turbo": "latest"
   },
   "lint-staged": {
-    "(apps|packages)/**/*.{js,ts,svelte}": [
+    "*.{js,ts,svelte,css,scss,postcss,md,json}": [
       "prettier --write",
       "eslint --fix"
-    ]
+    ],
+    "*.{js,ts,svelte}": "eslint"
   },
   "packageManager": "pnpm@7.15.0"
 }
