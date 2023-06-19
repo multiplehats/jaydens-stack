@@ -8,7 +8,14 @@ Welcome to Jayden's Stack 👋, a modern, efficient, and feature-packed monorepo
 When building this monorepo template, I believed that if you don't need something, it should be easy to remove. So yes, there might be some manual work involved, but the main goal here is to save myself time and hopefully yours! 🎉
 
 ## Todo's
+
+**Important:**
+
 - [x] Setup Husky, commitlint and CLI.
+- [ ] Type checking doesn't work. Weird error is thrown.
+
+**Less important:**
+
 - [ ] Spin tRPC off into its own package.
 - [ ] Integrate Prisma.
 - [ ] Incorporate AuthJS.
