@@ -4,7 +4,9 @@
   "main": "./index.ts",
   "types": "./index.ts",
   "scripts": {
-    "prisma": "prisma"
+    "prisma": "prisma",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push"
   },
   "devDependencies": {
     "prisma": "^4.16.1"
