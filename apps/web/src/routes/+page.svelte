@@ -45,6 +45,11 @@
         "Utils for fetching, caching and updating asynchronous data. Tightly integrated for you with tRPC and SvelteKit",
       link: "https://tanstack.com/query/latest/docs/svelte/overview",
     },
+    {
+      title: "Auth.js",
+      description: "Formerly Next Auth, a flexible, extensible, and powerful authentication library",
+      link: "https://authjs.dev/"
+    }
   ] satisfies {
     title: string;
     description: string;
