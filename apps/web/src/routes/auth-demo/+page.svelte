@@ -1,9 +1,8 @@
 <script lang="ts">
   import { page } from "$app/stores";
   import { signIn, signOut } from "@auth/sveltekit/client";
-
   import { cn } from "@acme/core/class-utils";
-  import { badgeVariants, Button, Card } from "@acme/ui";
+  import { badgeVariants, Button } from "@acme/ui";
 
   import { api } from "$lib/api/client";
 
