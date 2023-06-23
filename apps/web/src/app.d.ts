@@ -1,13 +1,22 @@
 /// <reference types="@sveltejs/kit" />
 import type { DefaultSession, Session } from '@auth/core/types';
 
+type ExtendedUser = {
+  /** The user's ID in the database. */
+  id: string
+} & DefaultSession["user"]
+
+type ExtendedSession = DefaultSession & {
+  user: ExtendedUser
+}
+
 /**
  * @see https://kit.svelte.dev/docs/types#app
  */
 declare namespace App {
   // interface Locals {}
   interface PageData {
-    session?: Session | null;
+    session?: ExtendedSession | null;
   }
   // interface Platform {}
 }
@@ -22,7 +31,7 @@ declare namespace App {
 declare global {
   namespace App {
     interface PageData {
-      session?: Session | null;
+      session?: ExtendedSession | null;
     }
   }
 }
@@ -32,13 +41,10 @@ declare global {
  */
 declare module '@auth/core/types' {
   /**
-   * Returned by `useSession`, `getSession`.
+   * Overwrite the default `Session` type with our extended version.
    */
   interface Session {
-    user: {
-      /** The user's ID in the database. */
-      id: string
-    } & DefaultSession["user"]
+    user: ExtendedUser
   }
 }
 

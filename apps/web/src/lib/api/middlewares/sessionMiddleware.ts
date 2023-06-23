@@ -4,7 +4,7 @@ import { middleware } from '../trpc';
 import type { Session } from '@auth/core/types';
 import { type Maybe, TRPCError } from '@trpc/server';
 
-export async function getUserFromSession(ctx: TRPCContextInner, session: Maybe<Session>) {
+export async function getUserFromSession(ctx: TRPCContextInner, session?: Maybe<Session>) {
     const { prisma } = ctx;
 
     if (!session?.user?.id) {

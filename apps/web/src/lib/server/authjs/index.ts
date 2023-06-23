@@ -61,6 +61,12 @@ export const authConfig = {
     },
 } as SvelteKitAuthConfig;
 
-export async function getSession(req: Request): ReturnType<App.Locals["getSession"]> {
-    return _getSession(req, authConfig);
+export async function getSession(req: Request): Promise<Session | null> {
+    const session = await _getSession(req, authConfig);
+
+    if (!session) {
+        return null;
+    }
+
+    return session as Session;
 }

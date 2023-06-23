@@ -55,7 +55,7 @@
       </form>
     </div>
 
-    {#if $session.data?.session}
+    {#if $session.data?.session?.user}
       <div class="p-10">
         <p class="text-sm mb-4 font-normal text-gray-400 lg:text-xl sm:px-16 xl:px-48">
           You're logged in as. Your user ID is: {$session.data.session?.user.id}
