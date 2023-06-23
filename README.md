@@ -16,9 +16,13 @@ When building this monorepo template, I tried to make it so that if you don't ne
 
 ## Todos / Features
 
+- [x] tRPC
+- [x] Integrate Prisma + Planetscale
+- [x] Incorporate AuthJS.
 - [ ] Spin tRPC off into its own package.
-- [ ] Integrate Prisma + Planetscale
-- [ ] Incorporate AuthJS.
+- [ ] Edge routes are currently not supported because of `SvelteKitAuth` in hooks.server.ts (it loads Prisma).
+
+  Have solved this in other projects by copying over [these functions](https://github.com/nextauthjs/next-auth/blob/50a88bb8783b3d81b29a567bf680a6fc6dcd6573/packages/frameworks-sveltekit/src/lib/client.ts#L37) and changing `/auth/` to `/api/auth/`. But for this template it's probably better to wait until this hardcoded path is fixed upstream and these functions allow for custom base paths so that our "handle" can sit in `/src/routes/api/auth/[...authjs]` next to the `trpc` entrypoint.
 
 ## Featured Technologies
 - **tRPC**: Enables you to make end-to-end typesafe APIs like a ninja. It allows for the freedom of serverless applications without lock-ins and can be easily spun into a standalone server.
@@ -54,6 +58,10 @@ Voila! You now have a local running instance of Jayden's Stack!
 Adding new components is pretty simple, you can either manually over components to the `packages/ui` directory. Or, `cd` into `apps/web` and run the shadcn CLI command, e.g. `npx shadcn-svelte add accordion`. This will put the new component in the `packages/ui` directory.
 
 Don't forget to update imports ✌️
+
+## Gotcha's & Notes
+
+- Prisma needs to be installed in `apps/web` as well as `packages/database`, because of this [issue](https://github.com/prisma/prisma/issues/6603), alternatively see [this Slack thread](https://prisma.slack.com/archives/CA491RJH0/p1677500075237659).
 
 ## Contributing
 Contributions, issues, and feature requests are welcome! See our [Contributing Guide](CONTRIBUTING.md) for more details.

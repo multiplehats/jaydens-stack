@@ -1,8 +1,13 @@
 <script lang="ts">
+  import { page } from "$app/stores";
+
   import { cn } from "@acme/core/class-utils";
   import { Button } from "@acme/ui";
   import { badgeVariants } from "@acme/ui";
 
+  import { api } from "$lib/api/client";
+
+  const client = api($page);
   const features = [
     {
       title: "Turborepo",
@@ -45,6 +50,8 @@
     description: string;
     link: string;
   }[];
+
+  $: session = client.session.createQuery();
 </script>
 
 <section class="bg-black h-full min-h-screen">
@@ -59,7 +66,7 @@
           clip-rule="evenodd" /></svg>
     </a>
 
-    <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl ">
+    <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
       Jaydens Stack
     </h1>
 
@@ -68,10 +75,17 @@
       and scale up with confidence.
     </p>
 
+    {#if $session.data?.session}
+      <p class="mb-8 mt-4 text-lg font-normal text-gray-400 lg:text-xl sm:px-16 xl:px-48">
+        You're logged in as. Your user ID is: {$session.data.session?.user.id}
+      </p>
+    {/if}
     <div
       class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
       <Button href="https://github.com/multiplehats/jaydens-stack/tree/main#installation"
         >Installation</Button>
+      <Button href="/auth-demo">Auth Demo</Button>
+      <Button variant="destructive" href="/auth-demo/guarded-page">View guarded page</Button>
       <Button variant="secondary" href="https://github.com/multiplehats/jaydens-stack">Star on Github</Button>
     </div>
 

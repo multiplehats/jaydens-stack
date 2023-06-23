@@ -10,7 +10,7 @@ const meRouter = router({
   }),
 });
 
-export const AuthedViewerRouter = mergeRouters(
+export const authedViewerRouter = mergeRouters(
   // Easily merge "one-off" routers that don't make sense to put in their own file until they grow.
   meRouter
   // Add more routers here 👇

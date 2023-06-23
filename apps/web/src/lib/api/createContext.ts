@@ -1,4 +1,5 @@
 import type { RequestEvent } from "@sveltejs/kit";
+import { prisma } from "$lib/server/db";
 
 export type CreateInnerContextOptions = {
   request: RequestEvent["request"];
@@ -16,6 +17,7 @@ export type CreateInnerContextOptions = {
  */
 export async function createContextInner(opts: CreateInnerContextOptions) {
   return {
+    prisma,
     ...opts,
   };
 }

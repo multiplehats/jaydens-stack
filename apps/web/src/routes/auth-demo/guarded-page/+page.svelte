@@ -1,0 +1,1 @@
+<p>Guarded page. Only if you have an active session you can see this.</p>

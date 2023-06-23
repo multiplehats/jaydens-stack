@@ -9,6 +9,7 @@
     "lint:fix": "turbo run lint:fix",
     "pre-commit": "lint-staged",
     "format": "prettier --write \"**/*.{ts,tsx,md,svelte}\"",
+    "prisma": "pnpm run --filter @acme/database prisma",
     "lint-staged": "lint-staged",
     "prepare": "husky install",
     "type-check": "turbo run type-check"
