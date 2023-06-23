@@ -47,7 +47,12 @@ When building this monorepo template, I tried to make it so that if you don't ne
     pnpm install
     ```
 
-5. Start the party:
+5. Copy .env.example in the root of the project. Generate a new `AUTH_SECRET`. And set the `DATABASE_URL`. The schema is setup for Planetscale, but you can easily modify it to a different need.
+   ```
+   openssl rand -base64 32 # generate secret
+   ```
+
+6. Start the party:
     ```
     pnpm dev
     ```
